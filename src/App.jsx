@@ -46,7 +46,10 @@ function App() {
       <header className="app-header">
         <div className="header-content">
           <div className="header-title-section">
-            <h1>가맹 희망 지역 현황</h1>
+            <div className="title-wrapper">
+              <h1>가맹 희망 지역 현황</h1>
+              {!loading && data && <span className="data-count-badge">총 {data.length}건</span>}
+            </div>
             <p>실시간 가맹 문의 및 설명회 신청 현황</p>
           </div>
           <div className="header-upload-section">
